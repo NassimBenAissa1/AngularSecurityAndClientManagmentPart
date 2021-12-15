@@ -24,6 +24,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { SimpleNotificationsModule } from 'angular2-notifications';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignupComponent } from './Auth-Managment/signup/signup.component';
+import { ClientProfileBadgeComponent } from './Client-Managment/client-profile-badge/client-profile-badge.component';
+import { ClientRetrieveButtonsComponent } from './Client-Managment/client-retrieve-buttons/client-retrieve-buttons.component';
 
 
 @NgModule({
@@ -46,6 +48,8 @@ import { SignupComponent } from './Auth-Managment/signup/signup.component';
           LoginComponent,
           NotFoundComponent,
           SignupComponent,
+          ClientProfileBadgeComponent,
+          ClientRetrieveButtonsComponent,
         
   ],
   imports: [

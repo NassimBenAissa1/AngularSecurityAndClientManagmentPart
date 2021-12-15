@@ -52,10 +52,10 @@
                                 <td>{{c.email}}</td>
                                 <td><a href="javascript:void(0)" class="dot"></a><span>{{c.categorieClient}}</span></td>
                                 <td>
-                                    <a href="javascript:void(0)" (click)="goToUpdateClient(c.idClient)" class="btn btn-icon btn-outline-primary btn-round mr-2 mb-2 mb-sm-0 "><i class="ti ti-pencil"></i></a>
-                                    <a href="javascript:void(0)" (click)="goToDeleteClient(c.idClient)" class="btn btn-icon btn-outline-danger btn-round" ><i class="ti ti-close"></i></a>
-                               
-                                </td>
+                                    <a  (click)="goToUpdateClient(c.idClient)" class="btn btn-icon btn-outline-primary btn-round mr-2 mb-2 mb-sm-0 "><i class="ti ti-pencil"></i></a>
+                               <app-client-retrieve-buttons (deleteClick)="goToDeleteClient(c.idClient)" ></app-client-retrieve-buttons>    
+                             
+                            </td>
                             </tr> 
                         </ng-container>
                         </tbody>
